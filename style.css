@@ -13,7 +13,7 @@ body{
     overflow:hidden;
     border-radius: 10px;
     width: 900px;
-    height: 525px;
+    height: 515px;
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
@@ -63,7 +63,7 @@ button{
     font-weight: 400;
     font-family: "Lexend Deca", serif;
     padding: 13px 30px;
-    margin-top: 4rem;
+    margin-top: 3rem;
     border-radius: 30px;
     border: 0px;
 }
