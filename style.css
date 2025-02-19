@@ -1,0 +1,118 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    overflow:hidden;
+    border-radius: 10px;
+    width: 900px;
+    height: 525px;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.orange, .green, .darkgreen{
+    box-sizing: border-box;
+}
+
+.orange{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.green{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.darkgreen{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sedans, .luxury, .suvs{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 50px 45px;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Big Shoulders Display", serif;
+    color: white;
+}
+
+ p{
+    font-size: 15px;
+    font-weight: 350;
+    font-family: "Lexend Deca", serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+}
+
+button{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Lexend Deca", serif;
+    padding: 13px 30px;
+    margin-top: 4rem;
+    border-radius: 30px;
+    border: 0px;
+}
+
+.buttonOrange{
+    color: hsl(31, 77%, 52%);
+}
+
+.buttonGreen{
+    color: hsl(184, 100%, 22%);
+}
+
+.buttonDark{
+    color: hsl(179, 100%, 13%);
+}
+
+.buttonOrange:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border: 0.5px solid white;
+}
+
+.buttonGreen:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: 0.5px solid white;
+}
+
+.buttonDark:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 0.5px solid white;
+}
+
+
+
+/* Media query para pantallas pequeñas de 420px o menos */
+@media (max-width: 420px) {
+    body{
+        padding: 30px 10px;
+    }
+    
+    .container {
+        height: auto;
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    button{
+        margin-top: 1rem;
+    }
+
+}
