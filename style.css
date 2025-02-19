@@ -101,12 +101,13 @@ button{
 
 
 /* Media query para pantallas pequeñas de 420px o menos */
-@media (max-width: 420px) {
+@media (max-width: 930px) {
     body{
         padding: 30px 10px;
     }
     
     .container {
+        width: 350px;
         height: auto;
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }
